@@ -1,27 +1,21 @@
-<h1>Listing posts</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Rebecca Nguyen's Blog</h1>
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.name %></td>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+<div class= "blog">
+ <p>thoughts with:</p>
+    <p><%= post.name %></p>
+ <p></p> 
+   <p><%= post.title %></p>
+ </div>
+
+ <div>
+    <p><%= post.content %><%= link_to 'View', post %>
+    <%= link_to 'Edit', edit_post_path(post) %><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+</div>
+ 
+  
 <% end %>
-</table>
 
 <br />
-
 <%= link_to 'New Post', new_post_path %>
