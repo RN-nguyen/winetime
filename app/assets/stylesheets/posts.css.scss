@@ -1,99 +1,44 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-h1 {
-  text-align: left;
-  font-family: helvetica, verdana, arial, sans-serif;
-  padding: 2px 2px 2px 2px;
+.blog-heading {
+  margin: auto;
+  border-style: 2px 2px 2px 2px;
+  border-color: #401a5d
+ 
 }
 
-th {
-  font-size: 16px;
-  line-height: 16px;
-  font-family: helvetica, verdana, arial, sans-serif;
-}
-
-body {
-  background-color: #415d65;
-  color: #3a5063;
-  font-family: helvetica, verdana, arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 4px 5px;
-  margin: 15px 15px
+.blog-text{
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  background: lighten(#2f2b64, 2%);
+  border-radius: 1%;
+  border-color: darken(#2f2b64, 25%);
+  box-shadow: 20px
 
 }
 
-ul {
-  font-family:  helvetica, verdana, arial, sans-serif;
-  font-size: 13px;
-  line-height: 17px;
-  padding: 7px 7px;
-  margin: 7px 7px
-}
-
-p {
-  font-family:  helvetica, verdana, arial, sans-serif;
-  font-size: 13px;
-  line-height: 17px;
-  padding: 7px 7px;
-  margin: 7px 7px
-}
-
-
-pre {
-  background-color: #efefef;
-  padding: 10px;
-  font-size: 11px
+nav ul { 
+  padding: 10px 100px 10px 10px;
+  margin: auto
 }
 
 a {
-  color: #102d7e;
-  &:visited {
-    color: #55a3a3;
+  color: #73a0d8;    
   }
-  &:hover {
-    color: #4b89d0;
-    // background-color: #000;
-  }
+
+h2 {
+  color: #73a0d8; 
 }
 
+.blog-content {
+  height: 70%;
+  width: 70%;
+  margin: auto;
+  background: darken(#2f2b64, 8%);
+  color: lighten(#73a0d8, 7%);
+  font-family: arial;
+  font-size: 14px;
+  padding: 20px 30px 30px 30px;
+  border-radius: 1%
 
-// div {
-//   &.field, &.actions {
-//     margin-bottom: 10px;
-//   }
-// }
-
-#notice {
-  color: green;
-}
-
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
-  }
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
 }

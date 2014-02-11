@@ -1,12 +1,7 @@
- <p>
-    <b></b>
-    <%= comment.commenter %>
-  </p>
- 
-  <p>
-    <b>says:</b>
-    <%= comment.body %>
-  </p>
+<p>
+  <%= comment.commenter %> <b>says:</b>
+  <%= comment.body %>
+</p>
 
 <p>
   <%= link_to 'Delete', [comment.post, comment],
