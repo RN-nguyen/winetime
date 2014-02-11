@@ -20,7 +20,6 @@ test:
   pool: 5
   username: rebeccanguyen
   password:
- 
 
 production:
   adapter: postgresql
@@ -29,4 +28,3 @@ production:
   pool: 5
   username: rebeccanguyen
   password:
- 
