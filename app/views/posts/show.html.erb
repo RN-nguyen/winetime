@@ -7,10 +7,19 @@
   <p><%= @post.content %></p>
 
 <h4>Comments</h4>
-<%= render @post.comments %>
+<% @post.comments.each do |comment| %>
+    <% unless comment.new_record? %>
+      <%= comment.commenter %>
+      <small> <%= comment.created_at.strftime(("Commented on %m/%d/%Y")) %> </small>
+      <%= simple_format(comment.body) %>
+    <% end %>
+  <% end %>
+
 
 <h4>Add a comment:</h4>
 <%= render "comments/adds_new_comment" %>
+
+
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

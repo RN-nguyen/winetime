@@ -1,15 +1,21 @@
 Blog::Application.routes.draw do
+  root to: "welcome#index"
+  get '/home' => 'static#home'
+  get '/about_me' => 'static#about_me'
+  get '/projects' => 'static#projects'
+
+  
+
 
   resources :posts do
     resources :comments
   end
 
+  
+
  # root to: 'home' => "static#home"
 
-  root to: "welcome#index"
-  get 'home' => 'static#home'
-  get 'about_me' => 'static#about_me'
-  get 'projects' => 'static#projects'
+ 
 
 
 
