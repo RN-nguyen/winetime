@@ -1,4 +1,8 @@
 Blog::Application.routes.draw do
+
+  
+  devise_for :authors
+
   root to: "welcome#index"
   get '/home' => 'static#home'
   get '/about_me' => 'static#about_me'

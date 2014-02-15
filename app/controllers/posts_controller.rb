@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  before_filter :authenticate_author!, except: [:index, :show]
 
    
   def index

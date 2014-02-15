@@ -20,6 +20,14 @@
 <%= render "comments/adds_new_comment" %>
 
 
+   <% if author_signed_in? %>
+    
+    <%= link_to 'Edit', edit_post_path(@post) %>
+    <%= link_to 'Destroy', posts_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% else %>
+    
+    <%= link_to 'Back', posts_path %>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+    <% end %>
+
+

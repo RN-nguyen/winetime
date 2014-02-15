@@ -6,13 +6,21 @@ gem 'rails', '3.2.16'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'simple_form'
 
 group :development do
   gem "binding_of_caller"
   gem "better_errors"
   gem "pry-rails"
   gem "meta_request"
-  gem 'xray-rails'
+  gem "xray-rails"
+  gem "rack-livereload"
+  gem "guard"
+  gem "guard-livereload"
+  gem "guard-pow", require: false
+  gem "ruby_gntp"
+  gem "letter_opener"
+  
 end
 
 ruby '2.0.0'
@@ -35,6 +43,7 @@ gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'devise'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
