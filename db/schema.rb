@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140216014055) do
+ActiveRecord::Schema.define(:version => 20140219013842) do
 
   create_table "authors", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -41,12 +41,21 @@ ActiveRecord::Schema.define(:version => 20140216014055) do
 
   add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
 
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "name"
     t.string   "title"
-    t.string   "content"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "content"
   end
 
 end

@@ -8,7 +8,8 @@ Blog::Application.configure do
   config.middleware.use Rack::LiveReload
   
   config.cache_classes = false
-
+  
+  config.action_mailer.delivery_method = :letter_opener
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 

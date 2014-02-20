@@ -1,18 +1,15 @@
-<div class="blog-heading">
-<h2>Rebecca Nguyen's Blog</h2>
-</div>
-<% @posts.each do |post| %>
 
-<div class= "blog">
+<h1>Rebecca's Blog</h1>
+  <% @posts.each do |post| %>
+  <div class= "blog">
    <p><strong><%= post.title %></strong></p>
- </div>
+  </div>
 
- <div class="blog-text">
-    <p>
+
+<div class="blog-text">
     <%= post.content %>
   </br>
   </br>
-
     <% if author_signed_in? %>
     <%= link_to 'View', post %>
     <%= link_to 'Edit', edit_post_path(post) %>
@@ -20,9 +17,6 @@
     <% else %>
     <%= link_to 'View', post %>
     <% end %>
-
-
-    </p>
 </div>
  
   

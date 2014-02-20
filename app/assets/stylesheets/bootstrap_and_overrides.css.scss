@@ -1,2 +1,19 @@
+$navbar-default-bg: $blue;
+$navbar-default-link-color: lighten($offwhite, 1.95%);
+
+$font-size-base: 16px;
+
 
 @import "bootstrap";
+
+
+body { 
+  background-color: lighten($offwhite, 1.95%);
+}
+
+
+
+
+
+
+

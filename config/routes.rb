@@ -1,6 +1,9 @@
 Blog::Application.routes.draw do
 
   
+  resources :contacts
+
+
   devise_for :authors
 
   root to: "welcome#index"

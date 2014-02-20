@@ -1,6 +1,11 @@
 
+$purple: #3C5ECC;
+$violet: #3D5399;
+$blue: #48B2AF;
+$orange: #FF8440;
+
+
+$offwhite: darken(#fafbf0, 1%);
+
 @import "bootstrap_and_overrides";
-@import "comments";
-@import "posts";
-@import "static";
-@import "welcome";
+
